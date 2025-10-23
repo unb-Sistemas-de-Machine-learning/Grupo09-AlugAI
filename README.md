@@ -11,15 +11,9 @@
 
 ## Sobre o Projeto
 
-O **PrediAluguel** é uma aplicação de Inteligência Artificial desenvolvida para estimar o valor justo de aluguel e de compra de imóveis e forcener, com base em dados públicos e padrões reais do mercado.
+O **PrediAluguel** é uma aplicação web com integração de um modelo de Inteligência Artificial, que possibilita estimar o valor justo de aluguel de imóveis e visualizar comparações e análises sobre estes, com base em dados públicos e padrões reais do mercado.
 
-A iniciativa nasce com o propósito de reduzir a assimetria de informações no setor imobiliário, prover uma facilitação da análise do custo x benefício de um imóvel e também fornecer uma previsão sobre preços futuros. Com isso, o sistema promove a transparência, acessibilidade, eficiência para locadores, locatários, vendedores e adquirentes de imóveis.
-
-A aplicação utiliza modelos de aprendizado de máquina (Machine Learning) para prever valores de aluguel ou do imóvel com base em fatores como:
-- Localização geográfica (latitude/longitude, bairro);
-- Características físicas (área, número de quartos, vagas, banheiros);
-- Indicadores socioeconômicos (renda média, IDH, infraestrutura urbana);
-- Dados históricos de anúncios.
+A iniciativa nasce com o propósito de reduzir a assimetria de informações no setor imobiliário, prover uma facilitação da análise do custo x benefício de um imóvel. Com isso, o sistema promove a transparência, acessibilidade, eficiência para locadores e locatários.
 
 ---
 
@@ -28,7 +22,7 @@ A aplicação utiliza modelos de aprendizado de máquina (Machine Learning) para
 | Categoria | Tecnologias |
 |------------|--------------|
 | **Back-end / ML** | Python, Scikit-learn, Pandas, XGBoost |
-| **Front-end / Interface** | Streamlit, HTML, CSS |
+| **Front-end / Interface** | React, Next, TypeScript, MaterialUI |
 | **Banco de Dados** | SQLite, CSVs públicos |
 | **Infraestrutura** | GitHub Pages (documentação), MkDocs |
 | **Design e Prototipação** | Figma, Miro, Canva |
