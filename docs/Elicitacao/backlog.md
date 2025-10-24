@@ -21,28 +21,28 @@ Agrupa as funcionalidades que envolvam toda a parte de extração, armazenamento
 
 ## Épicos
 
-### EP01: Formulário de preferências do usuário
+### **EP01:** Formulário de preferências do usuário
 - Eu, como usuário, desejo inserir as informações do tipo de imóvel que almejo.
 
-### EP02: Recomendação de Imóveis
+### **EP02:** Recomendação de Imóveis
 - Eu, como usuário, desejo visualizar alguns imóveis que estejam dentro das minhas preferências e sejam vantajosos para mim.
 
-### EP03: Rotulação dos dados
+### **EP03:** Rotulação dos dados
 - Eu, como usuário, desejo visualizar a classificação e destaques chaves, vinculados a cada imóvel.
 
-### EP04: Precificação de aluguel
+### **EP04:** Precificação de aluguel
 - Eu, como usuário, desejo obter a mensuração justa do aluguel de um imóvel.
 
-### EP05: Anúncios atualizados
+### **EP05:** Anúncios atualizados
 - Eu, como usuário, desejo obter análise de imóveis anunciados recentemente.
 
-### EP06: Regra de negócio custo-benefício
+### **EP06:** Regra de negócio custo-benefício
 - Eu, como usuário, desejo que o sistema apresente a comparação entre o preço anunciado e o preço sugerido pelo modelo de I.A
 
-### EP07: Pipe line de coleta de dados
+### **EP07:** Pipe line de coleta de dados
 - Eu, como usuário, desejo ter acesso a anúncios com dados atualizados o mais recentes possíveis.
 
-### EP08: Enriquecimento de dados com Modelo de I.A
+### **EP08:** Enriquecimento de dados com Modelo de I.A
 - Eu, como usuário, desejo obter informações adicionais nos anúncios, como o custo-benefício e vantagens.
 
 
