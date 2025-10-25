@@ -78,10 +78,26 @@ AlugAi/
 
 ### Inferência Modelo
 
+- Após o processamento e a validação dos dados na Camada Stage, inicia-se a etapa de treinamento do modelo de Machine Learning, responsável por prever o valor de aluguel de imóveis no Distrito Federal.
+
+- O modelo utiliza o XGBoost por sua eficiência em problemas tabulares e regressão supervisionada.
+
+- Objetivos na inferência
+
+    - Treinar um modelo de regressão robusto para estimar preços de aluguel;
+    - Ajustar hiperparâmetros para maximizar o desempenho (R², RMSE);
+    - Versionar e armazenar o modelo treinado para uso em inferências futuras;
+    - Permitir re-treinamentos automáticos conforme novos dados são coletados.
 
 
+*Tecnologias Utilizadas*
+
+- XGBoost, Pandas, Scikit-learn, Pickle
+
+- Evolução para Cloud: SageMaker
 
 ## Histórico de versões
 | Versão | Data | Descrição | Autor | Revisor
 | :-: | :-: | :-: | :-: | :-:|
-|`1.0`| 25/10/2025 | Criação do documento de Arquitetura de Dados | [Mateus]() | |
+|`1.0`| 19/10/2025 | Criação do documento de Engenharia de Dados| [Mateus]() | |
+|`1.1`| 25/10/2025 | Melhoria da Arquitetura e Descrição| [Mateus]() | |
