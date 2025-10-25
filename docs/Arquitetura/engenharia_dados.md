@@ -31,3 +31,11 @@
 - **Normalização e Padronização**: Padronização ou Normalização  aplicada a variáveis com grande amplitude (area, hoa) para otimizar o desempenho de modelos sensíveis à escala (como a Regressão Linear).
 - **One Hot Encoding**: Aplicado a todas as variáveis categóricas de baixa cardinalidade (Ex: furniture, city). Para neighborhood (alta cardinalidade), será testado o OHE em combinação com a Agregação/Grouping de bairros menos representativos.
 - **Dados de Teste e Treinamento**: Separação em 70% Treino, 15% Validação e 15% Teste. A validação será usada para tuning dos hiperparâmetros e o teste final para avaliação imparcial do modelo. 
+
+
+
+## Histórico de versões
+| Versão | Data | Descrição | Autor | Revisor
+| :-: | :-: | :-: | :-: | :-:|
+|`1.0`| 19/10/2025 | Criação do documento | [Mateus]() | |
+|`1.1`| 25/10/2025 | Criação do documento | [Mateus]() | |

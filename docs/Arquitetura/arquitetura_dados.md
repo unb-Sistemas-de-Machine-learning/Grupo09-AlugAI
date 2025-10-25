@@ -78,3 +78,10 @@ AlugAi/
 
 ### Inferência Modelo
 
+
+
+
+## Histórico de versões
+| Versão | Data | Descrição | Autor | Revisor
+| :-: | :-: | :-: | :-: | :-:|
+|`1.0`| 25/10/2025 | Criação do documento | [Mateus]() | |
