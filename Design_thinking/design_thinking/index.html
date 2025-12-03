@@ -1,0 +1,1552 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://unb-sistemas-de-machine-learning.github.io/Grupo09-PrediAluguel/Design_thinking/design_thinking/">
+      
+      
+        <link rel="prev" href="../../Elicitacao/historias_de_usuario/">
+      
+      
+        <link rel="next" href="../mapeamento_dados/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/logo_agente.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>Artefatos - Grupo 09 – AlugAI</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.618322db.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-7QVWYC7EZJ"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-7QVWYC7EZJ",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-7QVWYC7EZJ",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#artefatos" class="md-skip">
+          Pular para conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href="../.." title="Grupo 09 – AlugAI" class="md-header__button md-logo" aria-label="Grupo 09 – AlugAI" data-md-component="logo">
+      
+  <img src="../../assets/logo_agente.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Grupo 09 – AlugAI
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Artefatos
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="custom"  aria-label="Mudar para o modo escuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Mudar para o modo escuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="custom"  aria-label="Mudar para o modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Mudar para o modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando busca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/unb-Sistemas-de-Machine-learning/Grupo09-PrediAluguel" title="Ir para repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Abas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Equipe
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../Planejamento/cronograma/" class="md-tabs__link">
+          
+  
+  
+  Cronograma
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../Elicitacao/requisitosProduto/" class="md-tabs__link">
+          
+  
+  
+  Engenharia de Requisitos
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../Arquitetura/arquitetura_dados/" class="md-tabs__link">
+          
+  
+  
+  Arquitetura
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Grupo 09 – AlugAI" class="md-nav__button md-logo" aria-label="Grupo 09 – AlugAI" data-md-component="logo">
+      
+  <img src="../../assets/logo_agente.png" alt="logo">
+
+    </a>
+    Grupo 09 – AlugAI
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/unb-Sistemas-de-Machine-learning/Grupo09-PrediAluguel" title="Ir para repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Equipe
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cronograma
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Cronograma
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Planejamento/cronograma/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sprints
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Engenharia de Requisitos
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Engenharia de Requisitos
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Elicitação
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Elicitação
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Elicitacao/requisitosProduto/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Requisitos do Projeto
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Elicitacao/requisitosML/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Requisitos de Machine Learning
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Elicitacao/backlog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Backlog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Elicitacao/historias_de_usuario/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Histórias de Usuário
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Artefatos
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Artefatos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-introducao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Introdução
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-framework-e-ferramentas-utilizadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Framework e Ferramentas Utilizadas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-detalhamento-dos-artefatos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Detalhamento dos Artefatos
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Detalhamento dos Artefatos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-artefato-1-design-thinking-causes-canvas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1. Artefato 1 – Design Thinking: Causes Canvas
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fonte-elias-oliveira-e-gabriel-lima" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fonte: Elias Oliveira e Gabriel Lima
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Fonte: Elias Oliveira e Gabriel Lima">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#32-artefato-2-design-thinking-ideas-canvas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2. Artefato 2 – Design Thinking: Ideas Canvas
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fonte-elias-oliveira-e-gabriel-lima_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fonte: Elias Oliveira e Gabriel Lima
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Fonte: Elias Oliveira e Gabriel Lima">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#33-artefato-3-idea-filter-canvas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3. Artefato 3 – Idea Filter Canvas
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fonte-elias-oliveira-e-gabriel-lima_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fonte: Elias Oliveira e Gabriel Lima
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Fonte: Elias Oliveira e Gabriel Lima">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#34-artefato-4-parking-lot-of-ideas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4. Artefato 4 – Parking Lot of Ideas
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fonte-elias-oliveira-e-gabriel-lima_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fonte: Elias Oliveira e Gabriel Lima
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Fonte: Elias Oliveira e Gabriel Lima">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#35-artefato-5-machine-learning-canvas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.5. Artefato 5 – Machine Learning Canvas
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-conclusao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Conclusão
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#historico-de-versoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Histórico de versões
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mapeamento_dados/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mapeamento de Dados
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Arquitetura
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Arquitetura
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Arquitetura/arquitetura_dados/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Arquitetura de Dados
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Arquitetura/engenharia_dados/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Engenharia de Dados
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-introducao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Introdução
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-framework-e-ferramentas-utilizadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Framework e Ferramentas Utilizadas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-detalhamento-dos-artefatos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Detalhamento dos Artefatos
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Detalhamento dos Artefatos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-artefato-1-design-thinking-causes-canvas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1. Artefato 1 – Design Thinking: Causes Canvas
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fonte-elias-oliveira-e-gabriel-lima" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fonte: Elias Oliveira e Gabriel Lima
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Fonte: Elias Oliveira e Gabriel Lima">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#32-artefato-2-design-thinking-ideas-canvas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2. Artefato 2 – Design Thinking: Ideas Canvas
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fonte-elias-oliveira-e-gabriel-lima_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fonte: Elias Oliveira e Gabriel Lima
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Fonte: Elias Oliveira e Gabriel Lima">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#33-artefato-3-idea-filter-canvas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3. Artefato 3 – Idea Filter Canvas
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fonte-elias-oliveira-e-gabriel-lima_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fonte: Elias Oliveira e Gabriel Lima
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Fonte: Elias Oliveira e Gabriel Lima">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#34-artefato-4-parking-lot-of-ideas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4. Artefato 4 – Parking Lot of Ideas
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fonte-elias-oliveira-e-gabriel-lima_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fonte: Elias Oliveira e Gabriel Lima
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Fonte: Elias Oliveira e Gabriel Lima">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#35-artefato-5-machine-learning-canvas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.5. Artefato 5 – Machine Learning Canvas
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-conclusao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Conclusão
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#historico-de-versoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Histórico de versões
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="artefatos">Artefatos</h1>
+<h2 id="1-introducao"><strong>1. Introdução</strong></h2>
+<p>Este documento tem como objetivo apresentar e detalhar os artefatos criados durante a fase inicial de concepção do projeto <strong>Predição de Valor de Aluguel de Imóveis com IA</strong>.</p>
+<p>O propósito do projeto é desenvolver uma solução inteligente capaz de <strong>estimar o valor justo de aluguel de imóveis</strong> com base em dados públicos e reais do mercado, promovendo <strong>transparência, acessibilidade e eficiência</strong> no setor imobiliário.</p>
+<p>A fase de concepção foi fundamental para transformar uma necessidade do mercado em um <strong>plano de projeto estruturado</strong>, com escopo, funcionalidades e tecnologias bem definidas.</p>
+<hr />
+<h2 id="2-framework-e-ferramentas-utilizadas"><strong>2. Framework e Ferramentas Utilizadas</strong></h2>
+<p>A metodologia de concepção foi apoiada pelo framework <strong>PIM-Go (Product Integration Model)</strong>, que fornece modelos e templates para guiar o processo de design de produto de forma sistemática.<br />
+Adicionalmente, foram utilizadas ferramentas de apoio à modelagem de <strong>Machine Learning</strong>, para estruturar o núcleo de IA responsável pela predição dos valores.</p>
+<p><strong>Ferramentas utilizadas:</strong></p>
+<ul>
+<li><strong>Framework PIM-Go:</strong></li>
+<li>Design Thinking – Causas  </li>
+<li>Design Thinking – Ideias  </li>
+<li>Filtro de Ideias  </li>
+<li>
+<p>Parking Lot de Ideias  </p>
+</li>
+<li>
+<p><strong>Ferramenta técnica:</strong></p>
+</li>
+<li><strong>Machine Learning Canvas</strong> – para definição do fluxo e arquitetura do modelo preditivo.</li>
+</ul>
+<hr />
+<h2 id="3-detalhamento-dos-artefatos"><strong>3. Detalhamento dos Artefatos</strong></h2>
+<h3 id="31-artefato-1-design-thinking-causes-canvas">3.1. Artefato 1 – Design Thinking: Causes Canvas</h3>
+<p><strong>Descrição da Ferramenta:</strong><br />
+Modelo visual baseado no Diagrama de Ishikawa (Espinha de Peixe), utilizado para identificar <strong>as causas-raiz</strong> de um problema central.  </p>
+<p><strong>Aplicação no Projeto:</strong><br />
+Foi utilizado para decompor o problema principal de <strong>falta de transparência e precisão nos valores de aluguel de imóveis</strong>, permitindo compreender os fatores que influenciam a precificação desigual.  </p>
+<p><strong>Principais Insights:</strong>
+- <strong>Problema central:</strong> Dificuldade de estimar o valor justo de aluguel.<br />
+- <strong>Causas-raiz identificadas:</strong>
+  - Falta de dados padronizados e atualizados do mercado.<br />
+  - Ausência de modelos preditivos inteligentes.<br />
+  - Informações incompletas nos anúncios.<br />
+  - Diferenças regionais e infraestrutura local.<br />
+  - Subjetividade na avaliação dos corretores.<br />
+  - Fatores econômicos externos (inflação, juros, demanda).  </p>
+<p style="text-align:center"><b><a id="tab_1" style="visibility:hidden;"></a>Figura 1</b> – Causes Canvas – Predição de Aluguel</p>
+
+<p><img alt="Diagrama- Design Thinking - Cause" src="../../assets/diagrams/fish.png" /></p>
+<h2 id="fonte-elias-oliveira-e-gabriel-lima"><font size="2"><p style="text-align: center"><b>Fonte:  <a href="https://github.com/EliasOliver21">Elias Oliveira</a> e <a href="https://github.com/gabriel-lima258">Gabriel Lima</a></b></p></font></h2>
+<h3 id="32-artefato-2-design-thinking-ideas-canvas">3.2. Artefato 2 – Design Thinking: Ideas Canvas</h3>
+<p><strong>Descrição da Ferramenta:</strong><br />
+Canvas voltado para a <strong>ideação da solução</strong>, estruturando conceitos e funcionalidades do produto.  </p>
+<p><strong>Aplicação no Projeto:</strong><br />
+A ferramenta foi usada para converter o problema de precificação desigual em uma <strong>solução inovadora baseada em IA</strong>, capaz de aprender padrões reais do mercado imobiliário.  </p>
+<p><strong>Principais Insights:</strong>
+- <strong>Ideia central:</strong> Plataforma de IA para estimar o valor justo de aluguel.<br />
+- <strong>Principais funcionalidades:</strong>
+  - Estimativa automática do valor de aluguel.<br />
+  - Mapa interativo com preços médios por bairro.<br />
+  - Dashboard para corretores.<br />
+  - API pública de consulta.<br />
+  - Chatbot para tirar dúvidas sobre preços. </p>
+<p style="text-align:center"><b><a id="tab_1" style="visibility:hidden;"></a>Figura 2</b> – Ideas Canvas – Predição de Aluguel</p>
+
+<p><img alt="Diagrama- Design Thinking - Ideas" src="../../assets/diagrams/ideas.png" /> </p>
+<h2 id="fonte-elias-oliveira-e-gabriel-lima_1"><font size="2"><p style="text-align: center"><b>Fonte:  <a href="https://github.com/EliasOliver21">Elias Oliveira</a> e <a href="https://github.com/gabriel-lima258">Gabriel Lima</a></b></p></font></h2>
+<h3 id="33-artefato-3-idea-filter-canvas">3.3. Artefato 3 – Idea Filter Canvas</h3>
+<p><strong>Descrição da Ferramenta:</strong><br />
+Matriz de priorização que avalia as ideias geradas com base em <strong>Relevância</strong> e <strong>Confiança</strong>, para definir o foco do desenvolvimento.  </p>
+<p><strong>Aplicação no Projeto:</strong><br />
+O filtro foi usado para avaliar as ideias levantadas no <em>Ideas Canvas</em> e determinar o escopo do MVP.  </p>
+<p><strong>Principais Insights:</strong>
+- <strong>Sweet Spot (Alta relevância, Alta confiança):</strong>
+  - Modelo de IA de precificação.<br />
+  - Indicador “Preço Justo”.<br />
+  - Alertas automáticos de variação de valor.<br />
+- <strong>Valuable Risk:</strong><br />
+  - API pública de integração com portais.<br />
+  - Aplicativo mobile.<br />
+- <strong>Business as Usual:</strong><br />
+  - Dashboard de corretores e mapa interativo.  </p>
+<p style="text-align:center"><b><a id="tab_1" style="visibility:hidden;"></a>Figura 3</b> – Idea Filter Canvas – Predição de Aluguel</p>
+
+<p><img alt="Diagrama- Design Thinking - Filter" src="../../assets/diagrams/filter.png" /></p>
+<h2 id="fonte-elias-oliveira-e-gabriel-lima_2"><font size="2"><p style="text-align: center"><b>Fonte:  <a href="https://github.com/EliasOliver21">Elias Oliveira</a> e <a href="https://github.com/gabriel-lima258">Gabriel Lima</a></b></p></font></h2>
+<h3 id="34-artefato-4-parking-lot-of-ideas">3.4. Artefato 4 – Parking Lot of Ideas</h3>
+<p><strong>Descrição da Ferramenta:</strong><br />
+Técnica usada para <strong>registrar todas as ideias geradas</strong>, sem ainda aplicar filtros ou priorização.  </p>
+<p><strong>Aplicação no Projeto:</strong><br />
+O <em>Parking Lot</em> serviu como repositório de todas as funcionalidades e componentes do sistema, formando uma visão completa da solução.  </p>
+<p><strong>Principais Insights:</strong>
+- <strong>Feature:</strong> Estimativa automática, cálculo de preço por m², histórico de valores.<br />
+- <strong>Dados:</strong> Treinamento com dados públicos (Zap, IBGE, IPTU) e atualização contínua.<br />
+- <strong>Interface:</strong> Chatbot, mapa interativo, e dashboard simples.<br />
+- <strong>API:</strong> Integração com sites imobiliários e retorno em JSON.<br />
+- <strong>Chat:</strong> Linguagem natural e interação via Telegram/Web.  </p>
+<p style="text-align:center"><b><a id="tab_1" style="visibility:hidden;"></a>Figura 4</b> – Parking Lot of Ideas Canvas – Predição de Aluguel</p>
+
+<p><img alt="Diagrama- Design Thinking - Parking Lot" src="../../assets/diagrams/parking.png" /></p>
+<h2 id="fonte-elias-oliveira-e-gabriel-lima_3"><font size="2"><p style="text-align: center"><b>Fonte:  <a href="https://github.com/EliasOliver21">Elias Oliveira</a> e <a href="https://github.com/gabriel-lima258">Gabriel Lima</a></b></p></font></h2>
+<h3 id="35-artefato-5-machine-learning-canvas">3.5. Artefato 5 – Machine Learning Canvas</h3>
+<p><strong>Descrição da Ferramenta:</strong><br />
+Canvas estratégico para planejar sistemas baseados em IA, destacando proposta de valor, dados, features e métricas.  </p>
+<p><strong>Aplicação no Projeto:</strong><br />
+Foi usado para estruturar o modelo preditivo de preços de aluguel, conectando os aspectos técnicos e de negócio.  </p>
+<p><strong>Principais Insights:</strong>
+- <strong>Proposta de valor:</strong> Estimar o preço justo e reduzir distorções no mercado de aluguel.<br />
+- <strong>Dados:</strong> Base de imóveis (Kaggle, IBGE, portais públicos).<br />
+- <strong>Features:</strong> Área, número de quartos, banheiros, localização, taxa de condomínio.<br />
+- <strong>Modelo:</strong> Regressão (RandomForest, XGBoost).<br />
+- <strong>Avaliação:</strong> MAE, RMSE e comparação com valor de mercado real.<br />
+- <strong>Risco crítico:</strong> Dados desatualizados e ruído em anúncios.<br />
+- <strong>Métrica de sucesso:</strong> Precisão das previsões e satisfação dos usuários.  </p>
+<p style="text-align:center"><b><a id="tab_1" style="visibility:hidden;"></a>Figura 5</b> – ML Canvas – Predição de Aluguel</p>
+
+<p><img alt="Diagrama- Design Thinking - ML Canvas" src="../../assets/diagrams/mlcanva.png" /></p>
+<p><font size="2"><p style="text-align: center"><b>Fonte:  <a href="https://github.com/EliasOliver21">Elias Oliveira</a> e <a href="https://github.com/gabriel-lima258">Gabriel Lima</a></b></p></font></p>
+<hr />
+<h2 id="4-conclusao"><strong>4. Conclusão</strong></h2>
+<p>A aplicação sistemática do framework <strong>PIM-Go</strong> e dos canvas de concepção permitiu transformar uma necessidade do mercado imobiliário em um projeto de IA estruturado e validado.  </p>
+<p>O processo resultou em:
+- Um entendimento claro das dores dos usuários (locatários e corretores).<br />
+- Um escopo técnico e funcional sólido.<br />
+- A definição de um <strong>MVP</strong> viável, com foco em <strong>estimativa de valor justo e acessibilidade digital</strong>.  </p>
+<p>Essa base fornece segurança para avançar para as próximas etapas de <strong>prototipagem, modelagem e integração dos componentes de IA</strong>.</p>
+<hr />
+<h2 id="historico-de-versoes">Histórico de versões</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Versão</th>
+<th style="text-align: center;">Data</th>
+<th style="text-align: center;">Descrição</th>
+<th style="text-align: center;">Autor</th>
+<th style="text-align: center;">Revisor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><code>1.0</code></td>
+<td style="text-align: center;">23/09/2025</td>
+<td style="text-align: center;">Criação do documento</td>
+<td style="text-align: center;"><a href="https://github.com/EliasOliver21">Elias Oliveira</a>, <a href="">Mateus</a></td>
+<td style="text-align: center;"><a href=""></a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><code>2.0</code></td>
+<td style="text-align: center;">07/10/2025</td>
+<td style="text-align: center;">Reformulação dos artefatos</td>
+<td style="text-align: center;"><a href="https://github.com/gabriel-lima258">Gabriel Lima</a>, <a href="">Mateus</a></td>
+<td style="text-align: center;"><a href=""></a></td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Voltar para o topo
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.top"], "search": "../../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+    
+  </body>
+</html>
