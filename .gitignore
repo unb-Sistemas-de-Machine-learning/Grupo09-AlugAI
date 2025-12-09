@@ -20,7 +20,7 @@ __pycache__/
 *.swo
 .DS_Store
 
-# Modelos ML (descomente se não quiser versionar)
+# Modelos ML - Permitir versionar (necessário para deploy)
 # backend/models/*.pkl
 # backend/models/*.json
 # !backend/models/.gitkeep

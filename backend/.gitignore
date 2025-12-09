@@ -23,10 +23,10 @@ wheels/
 .installed.cfg
 *.egg
 
-# Modelos
-models/*.pkl
-models/*.json
-!models/.gitkeep
+# Modelos - Permitir versionar (necessário para deploy no Render)
+# models/*.pkl
+# models/*.json
+# !models/.gitkeep
 
 # IDE
 .vscode/
