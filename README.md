@@ -334,7 +334,7 @@ Sinta-se à vontade para estudar, adaptar e expandir a solução.
 
 - **Documentação:** https://unb-sistemas-de-machine-learning.github.io/Grupo09-AlugAI/
 - **Backend Deploy:** https://alugai.onrender.com
-- **Frontend Deploy:** https://alugai.streamlit.app
+- **Frontend Deploy:** [https://alugai.streamlit.app](https://grupo09-alugai2.streamlit.app/)
 - **Repositório:** https://github.com/unb-Sistemas-de-Machine-learning/Grupo09-AlugAI
 
 ---
